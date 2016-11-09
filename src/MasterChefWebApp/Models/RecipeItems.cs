@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MasterChefWebApp.Models
 {
-    public class RecipeItem:Entity
+    public class RecipeItem:Entity 
     {
         public virtual string Name { get; set; }
         public virtual float Quantity { get; set; }
