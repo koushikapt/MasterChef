@@ -1,0 +1,54 @@
+﻿<div>
+    <h2>Master Chief Recipes</h2>
+    <ul class="list-group">
+        <li ng-repeat="recipe in recipes" class="list-group-item">
+            <div class="btn-group">
+                <button class="btn badge pull-left" ng-click="expand(recipe)"><h5>{{recipe.name}} - {{recipe.comments}}</h5></button>
+            </div>
+            <div class="btn-group">
+                <a href="recipes/edit/{{recipe.id}}" class="btn btn-default btn-xs">edit</a>
+            </div>
+            <div class="btn-group">
+                <a href="recipes/delete/{{recipe.id}}" class="btn btn-danger btn-xs">delete</a>
+            </div>
+            <div class="btn-group">
+                <a href="recipes/addStep/{{recipe.id}}" class="btn btn-info btn-xs">Add a new step </a>
+            </div>
+            <ul class="list-group" ng-show="recipe.show">
+                <li ng-repeat="step in recipe.steps" class="list-group-item">
+                    <div class="row">
+                        <span>
+                            step {{step.stepNo}} : {{step.instructions}}
+                        </span>
+                        <div class="btn-group">
+                            <a href="recipes/editStep/{{step.id}}" class="btn btn-default btn-xs">edit</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="recipes/deleteStep/{{step.id}}" class="btn btn-danger btn-xs">delete</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="recipes/addItem/{{step.id}}" class="btn btn-info btn-xs">Add a new item </a>
+                        </div>
+                    </div>
+
+                    <ul class="list-group">
+                        <li ng-repeat="item in step.recipeItems" class="list-group-item">
+                            <div class="row">
+                                <span>
+                                    {{item.name}}  {{item.quantity}} {{item.measurementUnit}}
+                                </span>
+                                <div class="btn-group">
+                                    <a href="recipes/editItem/{{item.id}}" class="btn btn-default btn-xs">edit</a>
+                                </div>
+                                <div class="btn-group">
+                                    <a href="recipes/deleteItem/{{item.id}}" class="btn btn-danger btn-xs">delete</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p><a href="recipes/add" class="btn btn-primary"> Add a new recipe </a></p>
+</div>

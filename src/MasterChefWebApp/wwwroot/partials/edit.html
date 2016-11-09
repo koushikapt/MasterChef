@@ -1,0 +1,21 @@
+﻿<h1>Edit recipe</h1>
+<div class="container-fluid">
+    <form ng-submit="editRecipe()">
+        <div class="row">
+            <div class="form-group col-xs-4">
+                <label for="name">Name</label>
+                <input ng-model="recipe.name" name="name" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4 col-xs-8">
+                <label for="comments">Comments</label>
+                <input ng-model="recipe.comments" name="comments" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/" class="btn btn-default">Cancel</a>
+        </div>
+    </form>
+</div>
