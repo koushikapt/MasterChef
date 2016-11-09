@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{40FFA850-3177-4567-9259-2C7BF1E3EC90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D91E5DBB-E3C9-4AA1-B105-DF2862E9C2DD}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MasterChefWebApp", "src\MasterChefWebApp\MasterChefWebApp.xproj", "{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{85CC2C08-14BF-4EB2-83BC-DAD3AA88FA97} = {40FFA850-3177-4567-9259-2C7BF1E3EC90}
+	EndGlobalSection
+EndGlobal
